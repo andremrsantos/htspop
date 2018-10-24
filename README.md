@@ -34,3 +34,7 @@ If you use `htspop`, please specify the version and cite:
 
 > Ribeiro-dos-Santos, AM, de Souza, SJ (2018) Htspop: high-troughput sequencing
 > population genetic functions.
+
+## Contact
+
+André M. Ribeiro-dos-Santos, andremrsantos@gmail.com
