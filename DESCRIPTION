@@ -1,0 +1,22 @@
+Package: htspop
+Type: Package
+Title: htspop: High-Troughput Sequencing Population Genetics Statistics
+Version: 0.1.0
+Date: 2018-09-30
+Author: Andre M. Ribeiro-dos-Santos <andremrsantos@gmail.com>
+Maintainer: Andre M. Ribeiro-dos-Santos <andremrsantos@gmail.com>
+Description:
+  Collection of population genetic functions and statistics to analyze
+  high-dimensional biallelic genetic data.
+License: MIT
+Imports:
+  Rcpp (>= 0.12.18),
+  dplyr,
+  purrr,
+  matrixStats
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.1.0
+URL: https://github.com/andremrsantos/htspop
+BugReports: https://github.com/andremrsantos/htspop/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
