@@ -25,7 +25,18 @@ devtools::install_github("andremrsantos/htspop")
 ## Usage
 
 ```R
-hello_world()
+## Simulate genotype matrix
+geno <- matrix(sample(0:2, 100, replace = TRUE), ncol = 10)
+## Convert into Allele Count structure
+ac <- ac_matrix_from_genotype(geno) 
+## Run F Statistics
+jackknife(f4_stat(ac, c(1, 2, 3, 4)))
+jackknife(f3_stat(ac, c(1, 2, 3)))
+## Run D Statistics
+jackknife(d_stat(ac, c(1, 2, 3, 4)))
+## Compute Weir & Cockerham Fst and Nei Standard Genetic Distance
+fst(ac, "wc")
+nei(ac)
 ```
 
 ## Citation
@@ -36,5 +47,7 @@ If you use `htspop`, please specify the version and cite:
 > population genetic functions.
 
 ## Contact
+
+Create an issue to report bugs, propose new functions or ask for help. Please take in consideration this project is under development.
 
 André M. Ribeiro-dos-Santos, andremrsantos@gmail.com
