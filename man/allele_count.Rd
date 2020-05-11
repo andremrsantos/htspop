@@ -32,7 +32,7 @@ Allele count matrix
 \description{
 Creates an allele count matrix used on other analysis. The structure
 encapsulates the allele count and number of individual with variant as rows
-and groups as columns. It allows subsetting (\code{[]}), to check dimensions
+and groups as columns. It allows subsetting (\verb{[]}), to check dimensions
 (with \code{dim}, \code{nrow}, and \code{ncol}), and renaming them.
 }
 \examples{

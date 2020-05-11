@@ -6,14 +6,21 @@
 \alias{fst}
 \alias{bootstrap_fst}
 \title{Calculate the pairwise Fst statistic}
-\format{An object of class \code{character} of length 5.}
+\format{
+An object of class \code{character} of length 5.
+}
 \usage{
 fst_methods
 
 fst(ac, method = fst_methods, snpwise = FALSE)
 
-bootstrap_fst(ac, method = fst_methods, boots = 100L, block = 10L,
-  as_matrix = FALSE)
+bootstrap_fst(
+  ac,
+  method = fst_methods,
+  boots = 100L,
+  block = 10L,
+  as_matrix = FALSE
+)
 }
 \arguments{
 \item{ac}{allele count matrix for which to compute \code{Fst}.}

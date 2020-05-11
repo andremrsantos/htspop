@@ -6,14 +6,21 @@
 \alias{nei}
 \alias{bootstrap_nei}
 \title{Calculate the pairwise Nei distance}
-\format{An object of class \code{character} of length 3.}
+\format{
+An object of class \code{character} of length 3.
+}
 \usage{
 nei_methods
 
 nei(ac, method = nei_methods)
 
-bootstrap_nei(ac, method = nei_methods, boots = 100L, block = 10L,
-  as_matrix = FALSE)
+bootstrap_nei(
+  ac,
+  method = nei_methods,
+  boots = 100L,
+  block = 10L,
+  as_matrix = FALSE
+)
 }
 \arguments{
 \item{ac}{allele count matrix for which to compute nei's distance.}
