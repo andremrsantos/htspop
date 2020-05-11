@@ -15,8 +15,8 @@ void Tracker::it() {
   if (i % 100)
     Rcpp::checkUserInterrupt();
 
-  if ((frequency * i) % n == 0) {
-    std::cerr << '.';
-  }
+  // if ((frequency * i) % n == 0) {
+  //   std::cerr << '.';
+  // }
   i++;
 }
