@@ -22,9 +22,12 @@
 #' @aliases NULL
 NULL
 #> NULL
-## Private functions
+#' @rdname fst
+#' @export
+fst_methods = c("reich", "weir_cockerham", "wc", "hudson", "wright")
+#> c("reich", "weir_cockerham", "wc", "hudson", "wright")
 # Validate and identify the fst function
-.fst_func <- function(method) {
+.fst_func <- function(method=fst_methods) {
   func <- switch(
     match.arg(method),
     reich = .pairwise_fst_reich,
@@ -34,10 +37,6 @@ NULL
     wright = .pairwise_fst_wright)
   return(func)
 }
-#' @rdname fst
-#' @export
-fst_methods = c("reich", "weir_cockerham", "wc", "hudson", "wright")
-#> c("reich", "weir_cockerham", "wc", "hudson", "wright")
 #' @rdname fst
 #' 
 #' @param ac allele count matrix for which to compute `Fst`.
