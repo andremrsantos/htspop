@@ -40,8 +40,8 @@ invert_allele <- function(ac) {
 population_names <- function(ac) {
   if (class(ac) != "allele_count")
     stop("`ac` must be an `allele_count`.")
-  names <- colnames(ac)
+  names <- dimnames.allele_count(ac)[[2]]
   if (is.null(names))
-    return(seq_len(ncol(ac)))
+    return(seq_len(dim.allele_count(ac)[2]))
   return(names)
 }
