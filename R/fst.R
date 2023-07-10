@@ -64,7 +64,7 @@ fst <- function(ac, method = fst_methods, snpwise = FALSE) {
   ## Extract population names
   pnames <- population_names(ac)
   ## Process output
-  M <- .fst_func(method)(count(ac), total(ac))
+  M <- .fst_func(method)(count_allele(ac), total_allele(ac))
   if (snpwise) {
     if (is.list(M))
       M <- M$den / M$num
